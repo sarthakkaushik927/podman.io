@@ -30,7 +30,7 @@ export const downloadsData = {
         command: 'winget install RedHat.Podman'
       }
     },
-    instructions: 'docs/installation#windows',
+    instructions: '/docs/installation#windows',
   },
   mac: {
     desktop: {
@@ -55,7 +55,7 @@ export const downloadsData = {
         command: 'brew install podman'
       }
     },
-    instructions: 'docs/installation#macos',
+    instructions: '/docs/installation#macos',
   },
   linux: {
     desktop: {
@@ -73,13 +73,13 @@ export const downloadsData = {
         title: 'Podman CLI for Linux',
         subtitle: `Podman Engine v${LATEST_VERSION}`,
         icon: 'material-symbols:terminal-rounded',
-        path: 'docs/installation#installing-on-linux',
+        path: '/docs/installation#installing-on-linux',
       },
       packageManager: {
         tool: 'DNF / APT',
         command: 'sudo dnf install podman # Fedora/CentOS/RHEL\n# or\nsudo apt-get update\nsudo apt-get -y install podman # Ubuntu/Debian'
       }
     },
-    instructions: 'docs/installation#installing-on-linux',
+    instructions: '/docs/installation#installing-on-linux',
   }
 };

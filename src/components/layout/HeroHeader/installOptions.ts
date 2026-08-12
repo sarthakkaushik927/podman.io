@@ -54,7 +54,7 @@ const operatingSystemData = [
       title: 'Podman CLI for Linux',
       subtitle: `Podman Engine v${LATEST_VERSION}`,
       icon: 'material-symbols:terminal-rounded',
-      path: `docs/installation#installing-on-linux`,
+      path: `/docs/installation#installing-on-linux`,
     },
     alt: {
       title: 'Podman Desktop for Linux',
