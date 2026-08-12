@@ -11,12 +11,12 @@ interface InstallationStepsProps {
 }
 
 const StepCard = ({ number, title, description, code }: { number: number, title: string, description: string, code?: string }) => (
-  <div className="relative mb-8 ml-6 rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 lg:ml-12 lg:p-8">
+  <div className="relative mb-8 ml-6 rounded-lg bg-gray-50 p-6 shadow-md dark:bg-gray-700 lg:ml-12 lg:p-8">
     <div className="absolute -left-10 top-6 flex h-12 w-12 items-center justify-center rounded-full bg-purple-700 text-xl font-bold text-white shadow-lg dark:bg-purple-500 lg:-left-16 lg:h-16 lg:w-16 lg:text-2xl">
       {number}
     </div>
     <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-gray-100">{title}</h3>
-    <Markdown text={description} styles="text-gray-600 dark:text-gray-400 mb-4" />
+    <Markdown text={description} styles="text-gray-500 dark:text-gray-300 mb-4" />
     {code && (
       <div className="mt-4">
         <CodeBlock language="bash" className="mb-0">
@@ -32,7 +32,7 @@ const InstallationSteps = ({ os, docLink }: InstallationStepsProps): JSX.Element
     <div className="mx-auto w-full max-w-4xl py-8">
       <div className="mb-10 text-center">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">Installation Steps</h2>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
           Follow these quick steps to get Podman running on {os === 'mac' ? 'macOS' : os === 'windows' ? 'Windows' : 'Linux'}.
         </p>
       </div>
