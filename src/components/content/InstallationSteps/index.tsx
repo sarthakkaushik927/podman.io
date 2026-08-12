@@ -86,7 +86,7 @@ const InstallationSteps = ({ os, docLink }: InstallationStepsProps): JSX.Element
       <div className="mt-12 text-center">
         <a 
           href={docLink} 
-          className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-6 py-3 font-semibold text-blue-700 transition-colors hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-blue-800"
+          className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-6 py-3 font-semibold text-blue-700 no-underline transition-colors hover:bg-blue-200 hover:no-underline hover:text-blue-800 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-blue-800"
         >
           <Icon icon="fluent:document-text-24-filled" className="text-xl" />
           View Detailed Documentation
