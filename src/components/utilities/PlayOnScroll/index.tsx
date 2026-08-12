@@ -17,7 +17,9 @@ const PlayOnScroll: React.FC = (props: VideoProps) => {
           const isFullyVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
           
           if (isFullyVisible) {
-            videoRef.current.play();
+            videoRef.current.play().catch((error) => {
+              console.warn('Autoplay prevented:', error);
+            });
           } else {
             videoRef.current.pause();
           }
@@ -33,7 +35,7 @@ const PlayOnScroll: React.FC = (props: VideoProps) => {
   
     return (
       <div>
-        <video className={props.styles} ref={videoRef} poster={props.posterImg} autoPlay>
+        <video className={props.styles} ref={videoRef} poster={props.posterImg} autoPlay muted loop playsInline>
           <source src={props.url} type={props.vidFormat} />
           {/* Add additional source elements for different video formats if needed */}
           Your browser does not support the video tag.
