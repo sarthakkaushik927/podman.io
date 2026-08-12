@@ -9,15 +9,15 @@ import OSTabs from '@site/src/components/ui/OSTabs';
 import InstallationSteps from '@site/src/components/content/InstallationSteps';
 
 const DownloadsContent = () => {
-  const { os: detectedOS } = useOSDetection();
+  const { os: detectedOS, isDetected } = useOSDetection();
   const [selectedOS, setSelectedOS] = useState<OperatingSystem>('linux');
 
   // Initialize selected OS with detected OS once it is known
   useEffect(() => {
-    if (detectedOS !== 'unknown') {
+    if (isDetected) {
       setSelectedOS(detectedOS);
     }
-  }, [detectedOS]);
+  }, [isDetected, detectedOS]);
 
   const data = downloadsData[selectedOS];
 
