@@ -79,6 +79,7 @@ const config = {
         items: [
           { to: 'features', label: 'Features', position: 'right' },
           { to: 'get-started', label: 'Get Started', position: 'right' },
+          { to: 'download', label: 'Downloads', position: 'right' },
           { to: 'community', label: 'Community', position: 'right' },
           {
             to: 'https://blog.podman.io',
@@ -108,8 +109,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Installation Instructions',
-                to: 'docs/installation',
+                label: 'Downloads',
+                to: '/download',
               },
               {
                 label: 'Documentation',
