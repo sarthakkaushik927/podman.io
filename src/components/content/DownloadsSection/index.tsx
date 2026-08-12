@@ -24,10 +24,10 @@ const DownloadsContent = () => {
   const data = downloadsData[os];
 
   const cliCards = os === 'windows' 
-    ? [data.cli.x86_64, data.cli.arm64] 
+    ? [(data.cli as any).x86_64, (data.cli as any).arm64] 
     : os === 'mac' 
-      ? [data.cli.universal] 
-      : [data.cli.default];
+      ? [(data.cli as any).universal] 
+      : [(data.cli as any).default];
 
   return (
     <div className="container mx-auto px-4 py-12">

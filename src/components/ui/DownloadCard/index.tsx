@@ -19,8 +19,8 @@ const DownloadCard = ({ title, subtitle, icon, path }: DownloadCardProps): JSX.E
           <p className="text-sm text-gray-600 dark:text-gray-400">{subtitle}</p>
         </div>
       </div>
-      <div className="w-full">
-        <Button as="link" text="Download" path={path} className="w-full justify-center" />
+      <div className="w-full flex justify-center">
+        <Button as="link" text="Download" path={path} />
       </div>
     </div>
   );
