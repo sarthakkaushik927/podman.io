@@ -30,7 +30,7 @@ export const downloadsData = {
         command: 'winget install RedHat.Podman'
       }
     },
-    instructions: 'https://podman-desktop.io/docs/Installation/windows-install'
+    instructions: 'docs/installation#windows',
   },
   mac: {
     desktop: {
@@ -48,14 +48,14 @@ export const downloadsData = {
         title: 'Podman CLI for macOS',
         subtitle: `macOS Installer v${LATEST_VERSION}`,
         icon: 'material-symbols:terminal-rounded',
-        path: `https://github.com/containers/podman/releases/download/v${LATEST_VERSION}/podman-installer-macos-amd64.pkg`, // Usually universal or handled via brew
+        path: `https://github.com/containers/podman/releases/download/v${LATEST_VERSION}/podman-installer-macos-amd64.pkg`,
       },
       packageManager: {
         tool: 'Homebrew',
         command: 'brew install podman'
       }
     },
-    instructions: 'https://podman-desktop.io/docs/Installation/mac-install'
+    instructions: 'docs/installation#macos',
   },
   linux: {
     desktop: {
@@ -80,6 +80,6 @@ export const downloadsData = {
         command: 'sudo dnf install podman # Fedora/CentOS/RHEL\n# or\nsudo apt-get update\nsudo apt-get -y install podman # Ubuntu/Debian'
       }
     },
-    instructions: 'https://podman-desktop.io/docs/Installation/linux-install'
+    instructions: 'docs/installation#installing-on-linux',
   }
 };
