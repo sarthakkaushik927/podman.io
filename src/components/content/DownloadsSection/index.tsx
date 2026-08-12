@@ -51,11 +51,6 @@ const DownloadsContent = () => {
         <PackageManagerTabs desktop={data.desktop.packageManager} cli={data.cli.packageManager} />
       </div>
 
-      <div className="text-center">
-        <a href={data.instructions} className="text-lg font-medium text-blue-600 hover:underline dark:text-blue-400">
-          View full installation instructions for {os} &rarr;
-        </a>
-      </div>
     </div>
   );
 };

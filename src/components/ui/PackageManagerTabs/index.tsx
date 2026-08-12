@@ -15,8 +15,8 @@ const PackageManagerTabs = ({ desktop, cli }: PackageManagerTabsProps): JSX.Elem
   const [activeTab, setActiveTab] = useState<'desktop' | 'cli'>(desktop ? 'desktop' : 'cli');
 
   return (
-    <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800">
-      <div className="flex border-b border-gray-200 dark:border-gray-700">
+    <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-lg bg-gray-50 shadow-xl dark:bg-gray-700 dark:shadow-none">
+      <div className="flex border-b border-gray-200 dark:border-gray-600">
         {desktop && (
           <button
             className={`flex-1 py-4 text-center font-medium transition-colors ${

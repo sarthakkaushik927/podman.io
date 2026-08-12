@@ -11,7 +11,7 @@ interface DownloadCardProps {
 
 const DownloadCard = ({ title, subtitle, icon, path }: DownloadCardProps): JSX.Element => {
   return (
-    <div className="flex flex-col items-center justify-between rounded-lg bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:bg-gray-800 lg:p-8">
+    <div className="flex flex-col items-center justify-between rounded-lg bg-gray-50 p-4 shadow-xl dark:bg-gray-700 dark:shadow-none lg:p-8">
       <div className="mb-6 flex w-full flex-col items-center gap-4 text-center">
         <Icon icon={icon} className="text-6xl text-purple-700 dark:text-purple-500" />
         <div>
