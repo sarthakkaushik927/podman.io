@@ -3,6 +3,7 @@ import { OperatingSystem } from '@site/src/hooks/useOSDetection';
 import { Icon } from '@iconify/react';
 import CodeBlock from '@theme/CodeBlock';
 import Markdown from '@site/src/components/utilities/Markdown';
+import Button from '@site/src/components/utilities/Button';
 
 interface InstallationStepsProps {
   os: OperatingSystem;
@@ -83,14 +84,8 @@ const InstallationSteps = ({ os, docLink }: InstallationStepsProps): JSX.Element
         )}
       </div>
 
-      <div className="mt-12 text-center">
-        <a 
-          href={docLink} 
-          className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-6 py-3 font-semibold text-blue-700 no-underline transition-colors hover:bg-blue-200 hover:no-underline hover:text-blue-800 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-blue-800"
-        >
-          <Icon icon="fluent:document-text-24-filled" className="text-xl" />
-          View Detailed Documentation
-        </a>
+      <div className="mt-12 flex justify-center">
+        <Button as="link" text="View Detailed Documentation" path={docLink} icon="fluent:document-text-24-filled" />
       </div>
     </div>
   );
