@@ -8,7 +8,7 @@ function DownloadPage() {
     <Layout title="Download Podman" description="Download Podman Desktop and Podman CLI for Windows, macOS, and Linux">
       <PageHeader 
         title="Download Podman" 
-        description="Get started with Podman Desktop and the Podman Engine. We automatically detect your operating system and provide the appropriate installers and binaries." 
+        description="Podman is supported on multiple platforms. Get started with Podman Desktop and the Podman Engine for Windows, macOS, and Linux." 
       />
       <DownloadsSection />
     </Layout>
